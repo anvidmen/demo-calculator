@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, #daffe9, #84bfff);
+}
+
+header {
+  width: 100%;
+  margin-top: 2rem;
+}
+header h1 {
+  color: #017d9c;
+  text-shadow: 2px 2px 2px grey;
+  font-size: 8vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#result {
+  text-align: right;
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  background-color: #caeef5;
+}
+
+.operations {
+  text-align: center;
+  font-size: x-large;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #017d9c;
+  outline-color: #00ff88;
+}
+.operations:hover, .operations:active {
+  cursor: pointer;
+  background-color: #056077;
+}
+
+.numbers {
+  text-align: center;
+  font-size: x-large;
+  width: 100%;
+  height: 100%;
+  background-color: #eff8fa;
+  outline-color: #00ff88;
+}
+.numbers:hover, .numbers:active {
+  cursor: pointer;
+  background-color: #b5dee7;
+}
+
+.grid-container {
+  display: grid;
+  margin: 0 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px 1px;
+  grid-template-areas: "result result result result" "total-delete total-delete delete divide" "seven eigth nine multiply" "four five six subtract" "one two three add" "zero zero decimal equal";
+}
+
+.result {
+  grid-area: result;
+}
+
+.total-delete {
+  grid-area: total-delete;
+}
+
+.delete {
+  grid-area: delete;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eigth {
+  grid-area: eigth;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.subtract {
+  grid-area: subtract;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.add {
+  grid-area: add;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.decimal {
+  grid-area: decimal;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  height: 3rem;
+  background-color: #017d9c;
+}
+
+.copyright {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  color: #ffe1e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
